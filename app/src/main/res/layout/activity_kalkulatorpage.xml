@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/bgkal"
+    tools:context=".kalkulatorpage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Kalkulator Sederhana"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/angka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+    
+    <Spinner
+        android:id="@+id/operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:entries="@array/pilOperator"/>
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tbHitung"
+        android:onClick="prosesHitung"/>
+
+
+
+
+</LinearLayout>
